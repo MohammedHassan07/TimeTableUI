@@ -1,8 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import Dashboard from '../pages/Dashboard';
-
-import { Home, BookOpen, Calendar, Users, ClipboardList } from 'lucide-react';
+import { Home, BookOpen, Calendar, Users, ClipboardList, FilePlus2 } from 'lucide-react';
 
 const Navbar = () => {
   return (
@@ -47,6 +46,14 @@ const Navbar = () => {
           >
             <ClipboardList className="h-5 w-5" />
             <span>Charts</span>
+          </Link>
+
+          <Link 
+            to="/assign-subjects" 
+            className="flex items-center space-x-1 text-gray-600 hover:text-blue-500 transition"
+          >
+            <FilePlus2 className="h-5 w-5" />
+            <span>Assign</span>
           </Link>
         </div>
       </nav>
